@@ -8,3 +8,10 @@ pipeline {
         }
     }
 }
+
+pipeline {
+    agent {
+        node {
+            label "Windows dan Linux" {
+            }
+}
