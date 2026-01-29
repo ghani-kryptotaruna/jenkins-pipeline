@@ -1,7 +1,7 @@
 pipeline {
     agent {
         node {
-            label "Windows dan Linux"
+            label "Windows && Linux"
         }
     }
     stages {
