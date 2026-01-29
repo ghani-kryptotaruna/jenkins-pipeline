@@ -4,13 +4,22 @@ pipeline {
             label "Windows && Linux"
         }
     }
+    
     stages {
-        stage ('Hallo') {
+        stage ('Build') {
             steps {
-                echo('Hallo apa kabar')
+                echo('Hallo Build')
             }
         }
     }
+
+    stage ('Deplog') {
+            steps {
+                echo('Hallo Deploy')
+            }
+        }
+    }
+
     post {
         always {
             echo 'I will always say Hello again!'
