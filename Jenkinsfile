@@ -1,5 +1,9 @@
 pipeline {
-    agent any
+    agent {
+        node {
+            label "Windows dan Linux"
+        }
+    }
     stages {
         stage ('Hallo') {
             steps {
